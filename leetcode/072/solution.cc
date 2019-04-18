@@ -7,9 +7,9 @@ public:
         for(int j = 1; j <= n2; j++) table[0][j] = j;
         for(int i = 1; i <= n1; i++) {
             for(int j = 1; j <= n2; j++) {
-                # remove word1[i] or word2[j]
+                // remove word1[i] or word2[j]
                 table[i][j] = min(table[i - 1][j], table[i][j - 1]) + 1; 
-                # replace word1[i] with word2[j]
+                // replace word1[i] with word2[j]
                 table[i][j] = min(table[i][j], table[i - 1][j - 1] + 1);
                 if(word1[i - 1] == word2[j - 1]) {
                     table[i][j] = min(table[i][j], table[i - 1][j - 1]);
