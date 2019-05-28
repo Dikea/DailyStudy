@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# From https://github.com/simtony/ai_challenger_sentiment
+
 import tensorflow as tf
 import tensorflow.contrib.cudnn_rnn as cudnn_rnn
 import numpy as np
